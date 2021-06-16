@@ -1,0 +1,38 @@
+import React from 'react'
+import styled from 'styled-components'
+import CartItem from './CartItem'
+function CartItems({ items }) {
+    console.log(items)
+    return (
+        <Container>
+            <Title>Shopping Cart</Title> 
+            <hr />
+            <ItemsContainer>
+                {
+                    items.map(item => (
+                        <CartItem
+                            id={item.id}
+                            item={item.product} 
+                        />
+                    ))
+                }
+            </ItemsContainer>
+        </Container>
+    )
+}
+
+export default CartItems
+
+const Container = styled.div`
+    flex: 0.8;    
+    background-color: white;
+    margin-right: 18px;
+    padding: 20px;
+
+`
+
+const Title = styled.h1 `
+    margin-bottom: 8px;
+`
+
+const ItemsContainer = styled.div``
