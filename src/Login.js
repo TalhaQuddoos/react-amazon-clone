@@ -25,7 +25,7 @@ function Login({ setUser }) {
         <Container>
             <Content>
                 <AmazonLogo src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png" />
-                <h1>Sign into Amazon</h1>
+                <h1>Sign in to Amazon</h1>
                 <LoginButton
                     onClick={signIn}
                 >
